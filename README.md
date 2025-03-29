@@ -1,4 +1,4 @@
-# MongoDbProject-JCR
+# ProjectApi
 
 Este repositorio contiene el código y la documentación para el proyecto de la asignatura de Bases de Datos 2 de la carrera de Ingeniería Informática en la Universidad Europea del Atlántico. El proyecto fue desarrollado por Miguel Andecochea, Alejandro Ateca, Iñigo Vaquero, Francisco Venero, Mario Viadero como parte de sus actividades académicas.
 
