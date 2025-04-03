@@ -18,7 +18,7 @@ Para iniciar la API, sigue estos pasos:
     ```sh
    node importData.js
 
-Si dispones de la interfaz de MongoDB Compass, podras observar que se ha importado la base de datos con el nombre de jjoo_2024_api. Si eseas comprobar que se ha importado correctamente puedes tomar de referencia que debería haber 44 atletas
+Si dispones de la interfaz de MongoDB Compass, podras observar que se ha importado la base de datos con el nombre de Eurocopa_2024_api. 
 
 4. Una vez que se completen las instalaciones de las dependencias, puedes iniciar la API ejecutando el siguiente comando
 
