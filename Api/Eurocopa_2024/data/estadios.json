@@ -1,0 +1,147 @@
+[
+    {
+      "name": "Allianz Arena",
+      "city": "Munich",
+      "capacity": "75,000",
+      "selection_name": "Alemania"
+    },
+    {
+      "name": "Stade de Suisse",
+      "city": "Berna",
+      "capacity": "31,000",
+      "selection_name": "Suiza"
+    },
+    {
+      "name": "Puskás Aréna",
+      "city": "Budapest",
+      "capacity": "67,000",
+      "selection_name": "Hungría"
+    },
+    {
+      "name": "Hampden Park",
+      "city": "Glasgow",
+      "capacity": "51,866",
+      "selection_name": "Escocia"
+    },
+    {
+      "name": "Santiago Bernabéu",
+      "city": "Madrid",
+      "capacity": "81,044",
+      "selection_name": "España"
+    },
+    {
+      "name": "Stadio Olimpico",
+      "city": "Roma",
+      "capacity": "70,634",
+      "selection_name": "Italia"
+    },
+    {
+      "name": "Stadion Poljud",
+      "city": "Split",
+      "capacity": "35,000",
+      "selection_name": "Croacia"
+    },
+    {
+      "name": "Arena Kombëtare",
+      "city": "Tirana",
+      "capacity": "22,500",
+      "selection_name": "Albania"
+    },
+    {
+      "name": "Wembley Stadium",
+      "city": "Londres",
+      "capacity": "90,000",
+      "selection_name": "Inglaterra"
+    },
+    {
+      "name": "Parken Stadium",
+      "city": "Copenhague",
+      "capacity": "38,000",
+      "selection_name": "Dinamarca"
+    },
+    {
+      "name": "Stadion Stožice",
+      "city": "Liubliana",
+      "capacity": "16,000",
+      "selection_name": "Eslovenia"
+    },
+    {
+      "name": "Stadion Rajko Mitić",
+      "city": "Belgrado",
+      "capacity": "53,000",
+      "selection_name": "Serbia"
+    },
+    {
+      "name": "Ernst Happel Stadion",
+      "city": "Viena",
+      "capacity": "50,000",
+      "selection_name": "Austria"
+    },
+    {
+      "name": "Stade de France",
+      "city": "Saint-Denis",
+      "capacity": "81,338",
+      "selection_name": "Francia"
+    },
+    {
+      "name": "Johan Cruijff Arena",
+      "city": "Ámsterdam",
+      "capacity": "54,000",
+      "selection_name": "Países Bajos"
+    },
+    {
+      "name": "Stadion Narodowy",
+      "city": "Varsovia",
+      "capacity": "58,500",
+      "selection_name": "Polonia"
+    },
+    {
+      "name": "Arena Națională",
+      "city": "Bucarest",
+      "capacity": "55,000",
+      "selection_name": "Rumania"
+    },
+    {
+      "name": "King Baudouin Stadium",
+      "city": "Bruselas",
+      "capacity": "50,000",
+      "selection_name": "Bélgica"
+    },
+    {
+      "name": "Tehelné pole",
+      "city": "Bratislava",
+      "capacity": "22,500",
+      "selection_name": "Eslovaquia"
+    },
+    {
+      "name": "Olympic Stadium",
+      "city": "Kiev",
+      "capacity": "70,050",
+      "selection_name": "Ucrania"
+    },
+    {
+      "name": "Estadio do Dragão",
+      "city": "Oporto",
+      "capacity": "50,033",
+      "selection_name": "Portugal"
+    },
+    {
+      "name": "Türk Telekom Stadium",
+      "city": "Estambul",
+      "capacity": "52,650",
+      "selection_name": "Turquía"
+    },
+    {
+      "name": "Batumi Stadium",
+      "city": "Batumi",
+      "capacity": "20,000",
+      "selection_name": "Georgia"
+    },
+    {
+      "name": "Sinobo Stadium",
+      "city": "Praga",
+      "capacity": "19,370",
+      "selection_name": "Chequia"
+    }
+  ]
+  
