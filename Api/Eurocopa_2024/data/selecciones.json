@@ -1,0 +1,171 @@
+[
+    {
+      "selection_name": "Alemania",
+      "capital": "Berlín",
+      "group_name": "A",
+      "population": "83,200,000",
+      "coach": "Julian Nagelsmann"
+    },
+    {
+      "selection_name": "Suiza",
+      "capital": "Berna",
+      "group_name": "A",
+      "population": "8,700,000",
+      "coach": "Murat Yakin"
+    },
+    {
+      "selection_name": "Hungría",
+      "capital": "Budapest",
+      "group_name": "A",
+      "population": "9,600,000",
+      "coach": "Marco Rossi"
+    },
+    {
+      "selection_name": "Escocia",
+      "capital": "Edimburgo",
+      "group_name": "A",
+      "population": "5,400,000",
+      "coach": "Steve Clarke"
+    },
+    {
+      "selection_name": "España",
+      "capital": "Madrid",
+      "group_name": "B",
+      "population": "47,420,000",
+      "coach": "Luis de la Fuente"
+    },
+    {
+      "selection_name": "Italia",
+      "capital": "Roma",
+      "group_name": "B",
+      "population": "59,110,000",
+      "coach": "Luciano Spalletti"
+    },
+    {
+      "selection_name": "Croacia",
+      "capital": "Zagreb",
+      "group_name": "B",
+      "population": "3,900,000",
+      "coach": "Zlatko Dalić"
+    },
+    {
+      "selection_name": "Albania",
+      "capital": "Tirana",
+      "group_name": "B",
+      "population": "2,800,000",
+      "coach": "Sylvinho"
+    },
+    {
+      "selection_name": "Inglaterra",
+      "capital": "Londres",
+      "group_name": "C",
+      "population": "56,000,000",
+      "coach": "Gareth Southgate"
+    },
+    {
+      "selection_name": "Dinamarca",
+      "capital": "Copenhague",
+      "group_name": "C",
+      "population": "5,800,000",
+      "coach": "Kasper Hjulmand"
+    },
+    {
+      "selection_name": "Eslovenia",
+      "capital": "Liubliana",
+      "group_name": "C",
+      "population": "2,100,000",
+      "coach": "Matjaž Kek"
+    },
+    {
+      "selection_name": "Serbia",
+      "capital": "Belgrado",
+      "group_name": "C",
+      "population": "6,700,000",
+      "coach": "Dragan Stojković"
+    },
+    {
+      "selection_name": "Austria",
+      "capital": "Viena",
+      "group_name": "D",
+      "population": "9,000,000",
+      "coach": "Ralf Rangnick"
+    },
+    {
+      "selection_name": "Francia",
+      "capital": "París",
+      "group_name": "D",
+      "population": "67,000,000",
+      "coach": "Didier Deschamps"
+    },
+    {
+      "selection_name": "Países Bajos",
+      "capital": "Ámsterdam",
+      "group_name": "D",
+      "population": "17,500,000",
+      "coach": "Ronald Koeman"
+    },
+    {
+      "selection_name": "Polonia",
+      "capital": "Varsovia",
+      "group_name": "D",
+      "population": "38,000,000",
+      "coach": "Michał Probierz"
+    },
+    {
+      "selection_name": "Rumania",
+      "capital": "Bucarest",
+      "group_name": "E",
+      "population": "19,000,000",
+      "coach": "Edward Iordănescu"
+    },
+    {
+      "selection_name": "Bélgica",
+      "capital": "Bruselas",
+      "group_name": "E",
+      "population": "11,500,000",
+      "coach": "Domenico Tedesco"
+    },
+    {
+      "selection_name": "Eslovaquia",
+      "capital": "Bratislava",
+      "group_name": "E",
+      "population": "5,400,000",
+      "coach": "Francesco Calzona"
+    },
+    {
+      "selection_name": "Ucrania",
+      "capital": "Kiev",
+      "group_name": "E",
+      "population": "41,000,000",
+      "coach": "Serhiy Rebrov"
+    },
+    {
+      "selection_name": "Portugal",
+      "capital": "Lisboa",
+      "group_name": "F",
+      "population": "10,300,000",
+      "coach": "Roberto Martínez"
+    },
+    {
+      "selection_name": "Turquía",
+      "capital": "Ankara",
+      "group_name": "F",
+      "population": "82,000,000",
+      "coach": "Vincenzo Montella"
+    },
+    {
+      "selection_name": "Georgia",
+      "capital": "Tiflis",
+      "group_name": "F",
+      "population": "3,700,000",
+      "coach": "Willy Sagnol"
+    },
+    {
+      "selection_name": "Chequia",
+      "capital": "Praga",
+      "group_name": "F",
+      "population": "10,700,000",
+      "coach": "Jaroslav Šilhavý"
+    }
+  ]
+  
