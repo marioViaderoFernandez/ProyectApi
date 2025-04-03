@@ -1,0 +1,201 @@
+[
+    {
+      "local_name_selection": "Alemania",
+      "visitor_name_selection": "Suiza",
+      "stadium_name": "Allianz Arena",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Hungría",
+      "visitor_name_selection": "Escocia",
+      "stadium_name": "Puskás Aréna",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "España",
+      "visitor_name_selection": "Italia",
+      "stadium_name": "Santiago Bernabéu",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Croacia",
+      "visitor_name_selection": "Albania",
+      "stadium_name": "Stadion Poljud",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Inglaterra",
+      "visitor_name_selection": "Dinamarca",
+      "stadium_name": "Wembley Stadium",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "Eslovenia",
+      "visitor_name_selection": "Serbia",
+      "stadium_name": "Stadion Stožice",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Austria",
+      "visitor_name_selection": "Francia",
+      "stadium_name": "Ernst Happel Stadion",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Países Bajos",
+      "visitor_name_selection": "Polonia",
+      "stadium_name": "Johan Cruijff Arena",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "Rumania",
+      "visitor_name_selection": "Bélgica",
+      "stadium_name": "Arena Națională",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Eslovaquia",
+      "visitor_name_selection": "Ucrania",
+      "stadium_name": "Tehelné pole",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Portugal",
+      "visitor_name_selection": "Turquía",
+      "stadium_name": "Estadio do Dragão",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "Georgia",
+      "visitor_name_selection": "Chequia",
+      "stadium_name": "Batumi Stadium",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Alemania",
+      "visitor_name_selection": "Hungría",
+      "stadium_name": "Allianz Arena",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Suiza",
+      "visitor_name_selection": "Escocia",
+      "stadium_name": "Stade de Suisse",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "España",
+      "visitor_name_selection": "Croacia",
+      "stadium_name": "Santiago Bernabéu",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Italia",
+      "visitor_name_selection": "Albania",
+      "stadium_name": "Stadio Olimpico",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Inglaterra",
+      "visitor_name_selection": "Eslovenia",
+      "stadium_name": "Wembley Stadium",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "Serbia",
+      "visitor_name_selection": "Dinamarca",
+      "stadium_name": "Stadion Rajko Mitić",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Austria",
+      "visitor_name_selection": "Países Bajos",
+      "stadium_name": "Ernst Happel Stadion",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Francia",
+      "visitor_name_selection": "Polonia",
+      "stadium_name": "Stade de France",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "Rumania",
+      "visitor_name_selection": "Eslovaquia",
+      "stadium_name": "Arena Națională",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Bélgica",
+      "visitor_name_selection": "Ucrania",
+      "stadium_name": "King Baudouin Stadium",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Portugal",
+      "visitor_name_selection": "Georgia",
+      "stadium_name": "Estadio do Dragão",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "Turquía",
+      "visitor_name_selection": "Chequia",
+      "stadium_name": "Türk Telekom Stadium",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Alemania",
+      "visitor_name_selection": "Escocia",
+      "stadium_name": "Allianz Arena",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Suiza",
+      "visitor_name_selection": "Hungría",
+      "stadium_name": "Stade de Suisse",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "España",
+      "visitor_name_selection": "Italia",
+      "stadium_name": "Santiago Bernabéu",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Croacia",
+      "visitor_name_selection": "Albania",
+      "stadium_name": "Stadion Poljud",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Inglaterra",
+      "visitor_name_selection": "Serbia",
+      "stadium_name": "Wembley Stadium",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "Dinamarca",
+      "visitor_name_selection": "Eslovenia",
+      "stadium_name": "Parken Stadium",
+      "match_time": "21:00"
+    },
+    {
+      "local_name_selection": "Francia",
+      "visitor_name_selection": "Países Bajos",
+      "stadium_name": "Stade de France",
+      "match_time": "15:00"
+    },
+    {
+      "local_name_selection": "Polonia",
+      "visitor_name_selection": "Austria",
+      "stadium_name": "Stadion Narodowy",
+      "match_time": "18:00"
+    },
+    {
+      "local_name_selection": "Rumania",
+      "visitor_name_selection": "Bélgica",
+      "stadium_name": "Arena Națională",
+      "match_time": "21:00"
+    }
+  ]
+  
