@@ -8,7 +8,7 @@ exports.searchEstadio = async (req, res) => {
 
         const isNumber = !isNaN(q);
 
-        if (field === 'capacidad' && isNumber) {
+        if (field === 'capacity' && isNumber) {
             query[field] = q;
         } else {
             query[field] = { $regex: q, $options: 'i' };

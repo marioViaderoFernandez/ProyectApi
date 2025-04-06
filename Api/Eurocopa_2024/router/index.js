@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 // Controladores importados
-const estadioController = require('../controllers/estadioController');
-const grupoController = require('../controllers/grupoController');
-const partidoController = require('../controllers/partidoController');
-const resultadoController = require('../controllers/resultadoController');
-const seleccionController = require('../controllers/seleccionController');
+const estadioController = require('../controllers/estadioControllers');
+const grupoController = require('../controllers/grupoControllers');
+const partidoController = require('../controllers/partidoControllers');
+const resultadoController = require('../controllers/resultadoControllers');
+const seleccionController = require('../controllers/seleccionControllers');
 
 module.exports = () => {
     // Página principal
