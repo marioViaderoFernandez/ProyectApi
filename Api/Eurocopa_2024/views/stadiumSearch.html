@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Estadio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      background-color: #f4f6f9;
+      color: #333;
+      margin: 0;
+    }
+    h1 {
+      color: #2980b9;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 1em;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+      margin-top: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Buscar Estadio</h1>
+  <form method="GET" action="/stadiumSearch">
+    <label for="stadium">Nombre del estadio:</label><br>
+    <input type="text" id="stadium" name="name" placeholder="Ej: Allianz Arena" required><br>
+    <button type="submit">Buscar</button>
+  </form>
+
+  <div id="results">
+    <!-- Resultados dinámicos -->
+  </div>
+
+  <a href="/home">Volver al inicio</a>
+</body>
+</html>
