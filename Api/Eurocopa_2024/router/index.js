@@ -2,40 +2,66 @@ const express = require('express');
 const router = express.Router();
 
 // Controladores importados
-const estadioController = require('../controllers/estadioControllers');
-const grupoController = require('../controllers/grupoControllers');
-const partidoController = require('../controllers/partidoControllers');
-const resultadoController = require('../controllers/resultadoControllers');
-const seleccionController = require('../controllers/seleccionControllers');
+const estadioControllers = require('../controllers/estadioControllers');
+const grupoControllers = require('../controllers/grupoControllers');
+const partidoControllers = require('../controllers/partidoControllers');
+const resultadoControllers = require('../controllers/resultadoControllers');
+const seleccionControllers = require('../controllers/seleccionControllers');
+
+// Controlador principal (para la página de inicio)
+const mainControllers = require('../controllers/mainControllers');
 
 module.exports = () => {
     // Página principal
-    router.get('/', (req, res) => {
-        const path = require('path');
-        res.sendFile(path.resolve('views', 'home.html'));
-        
-
-      });
-      
-
-    // Estadios
-    router.get('/estadios', estadioController.getAllEstadios);  // Obtener todos los estadios
-    router.get('/estadioSearch', estadioController.searchEstadio);  // Buscar estadio
+    router.get('/', mainControllers.home);  // Muestra la página de inicio
     
-    // Grupos
-    router.get('/grupos', grupoController.getAllGrupos);  // Obtener todos los grupos
-    
-    // Partidos
-    router.get('/partidos', partidoController.getAllPartidos);  // Obtener todos los partidos
-    router.get('/partidoSearch', partidoController.searchPartido);  // Buscar partido
-    
-    // Resultados
-    router.get('/resultados', resultadoController.getAllResultados);  // Obtener todos los resultados
-    router.get('/resultadoSearch', resultadoController.searchResultado);  // Buscar resultado
+    // Página de error
+    router.get('/error', mainControllers.error);  // Página de error
 
-    // Selecciones
-    router.get('/selecciones', seleccionController.getAllSelecciones);  // Obtener todas las selecciones
-    router.get('/seleccionSearch', seleccionController.searchSeleccion);  // Buscar selección
+    // **Estadios**
+    router.get('/estadios', estadioControllers.getAllEstadios);  // Ver todos los estadios
+    router.get('/estadioSearch', estadioControllers.searchEstadio);  // Buscar estadio
+
+    // **Grupos**
+    router.get('/grupos', grupoControllers.getAllGrupos);  // Ver todos los grupos
+
+    // **Partidos**
+    router.get('/partidos', partidoControllers.getAllPartidos);  // Ver todos los partidos
+    router.get('/partidoSearch', partidoControllers.searchPartido);  // Buscar partido
+
+    // **Resultados**
+    router.get('/resultados', resultadoControllers.getAllResultados);  // Ver todos los resultados
+    router.get('/resultadoSearch', resultadoControllers.searchResultado);  // Buscar resultado
+
+    // **Selecciones**
+    router.get('/selecciones', seleccionControllers.getAllSelecciones);  // Ver todas las selecciones
+    router.get('/seleccionSearch', seleccionControllers.searchSeleccion);  // Buscar selección
+
+    // Rutas para mostrar las vistas (HTML)
+    router.get('/home', (req, res) => {
+        res.sendFile('home.html', { root: 'views' });  // Ruta de la página de inicio
+    });
+    router.get('/error', (req, res) => {
+        res.sendFile('error.html', { root: 'views' });  // Ruta para página de error
+    });
+    router.get('/group', (req, res) => {
+        res.sendFile('group.html', { root: 'views' });  // Ruta para la página de grupos
+    });
+    router.get('/match', (req, res) => {
+        res.sendFile('match.html', { root: 'views' });  // Ruta para la página de partidos
+    });
+    router.get('/stadium', (req, res) => {
+        res.sendFile('stadium.html', { root: 'views' });  // Ruta para la página de estadios
+    });
+    router.get('/selection', (req, res) => {
+        res.sendFile('selection.html', { root: 'views' });  // Ruta para la página de selecciones
+    });
+    router.get('/stadiumSearch', (req, res) => {
+        res.sendFile('stadiumSearch.html', { root: 'views' });  // Ruta para búsqueda de estadios
+    });
+    router.get('/selectionSearch', (req, res) => {
+        res.sendFile('selectionSearch.html', { root: 'views' });  // Ruta para búsqueda de selecciones
+    });
 
     return router;
 };
