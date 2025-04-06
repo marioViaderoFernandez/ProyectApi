@@ -11,8 +11,12 @@ const seleccionController = require('../controllers/seleccionControllers');
 module.exports = () => {
     // Página principal
     router.get('/', (req, res) => {
-        res.send('Bienvenido a la API de la Eurocopa!');
-    });
+        const path = require('path');
+        res.sendFile(path.resolve('views', 'home.html'));
+        
+
+      });
+      
 
     // Estadios
     router.get('/estadios', estadioController.getAllEstadios);  // Obtener todos los estadios
