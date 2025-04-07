@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const partidoSchema = new mongoose.Schema({
-    local_name_selection: { type: String },  // Nombre de la selección local
-    visitor_name_selection: { type: String },  // Nombre de la selección visitante
-    stadium_name: { type: String },  // Nombre del estadio
+    equipo_1: { type: String },  // Nombre de la selección local
+    equipo_2: { type: String },  // Nombre de la selección visitante
+    estadio: { type: String },  // Nombre del estadio
     match_time: { type: String }  // Hora del partido
 });
 
