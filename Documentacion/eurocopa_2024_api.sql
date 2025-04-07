@@ -8,10 +8,10 @@ CREATE TABLE selecciones (
   id INT PRIMARY KEY AUTO_INCREMENT,
   selection_name VARCHAR(50) NOT NULL UNIQUE,
   capital VARCHAR(50) NOT NULL,
-  group_name INT,
+  group_name VARCHAR(1)NOT NULL UNIQUE,
   population BIGINT,
   coach VARCHAR(50),
-  FOREIGN KEY (group_id) REFERENCES grupos(id)
+  FOREIGN KEY (group_name) REFERENCES grupos(id)
 );
 
 CREATE TABLE estadios (
@@ -42,30 +42,30 @@ INSERT INTO grupos (group_name) VALUES
 
 -- Selecciones
 INSERT INTO selecciones (selection_name, capital, group_name, population, coach) VALUES
-('Alemania', 'Berlín', 1, 83200000, 'Julian Nagelsmann'),
-('Suiza', 'Berna', 1, 8700000, 'Murat Yakin'),
-('Hungría', 'Budapest', 1, 9600000, 'Marco Rossi'),
-('Escocia', 'Edimburgo', 1, 5400000, 'Steve Clarke'),
-('España', 'Madrid', 2, 47420000, 'Luis de la Fuente'),
-('Italia', 'Roma', 2, 59110000, 'Luciano Spalletti'),
-('Croacia', 'Zagreb', 2, 3900000, 'Zlatko Dalić'),
-('Albania', 'Tirana', 2, 2800000, 'Sylvinho'),
-('Inglaterra', 'Londres', 3, 56000000, 'Gareth Southgate'),
-('Dinamarca', 'Copenhague', 3, 5800000, 'Kasper Hjulmand'),
-('Eslovenia', 'Liubliana', 3, 2100000, 'Matjaž Kek'),
-('Serbia', 'Belgrado', 3, 6700000, 'Dragan Stojković'),
-('Austria', 'Viena', 4, 9000000, 'Ralf Rangnick'),
-('Francia', 'París', 4, 67000000, 'Didier Deschamps'),
-('Países Bajos', 'Ámsterdam', 4, 17500000, 'Ronald Koeman'),
-('Polonia', 'Varsovia', 4, 38000000, 'Michał Probierz'),
-('Rumania', 'Bucarest', 5, 19000000, 'Edward Iordănescu'),
-('Bélgica', 'Bruselas', 5, 11500000, 'Domenico Tedesco'),
-('Eslovaquia', 'Bratislava', 5, 5400000, 'Francesco Calzona'),
-('Ucrania', 'Kiev', 5, 41000000, 'Serhiy Rebrov'),
-('Portugal', 'Lisboa', 6, 10300000, 'Roberto Martínez'),
-('Turquía', 'Ankara', 6, 82000000, 'Vincenzo Montella'),
-('Georgia', 'Tiflis', 6, 3700000, 'Willy Sagnol'),
-('Chequia', 'Praga', 6, 10700000, 'Jaroslav Šilhavý');
+('Alemania', 'Berlín', A, 83200000, 'Julian Nagelsmann'),
+('Suiza', 'Berna', A, 8700000, 'Murat Yakin'),
+('Hungría', 'Budapest', A, 9600000, 'Marco Rossi'),
+('Escocia', 'Edimburgo', A, 5400000, 'Steve Clarke'),
+('España', 'Madrid', B, 47420000, 'Luis de la Fuente'),
+('Italia', 'Roma', B, 59110000, 'Luciano Spalletti'),
+('Croacia', 'Zagreb', B, 3900000, 'Zlatko Dalić'),
+('Albania', 'Tirana', B, 2800000, 'Sylvinho'),
+('Inglaterra', 'Londres', C, 56000000, 'Gareth Southgate'),
+('Dinamarca', 'Copenhague', C, 5800000, 'Kasper Hjulmand'),
+('Eslovenia', 'Liubliana', C, 2100000, 'Matjaž Kek'),
+('Serbia', 'Belgrado', C, 6700000, 'Dragan Stojković'),
+('Austria', 'Viena', D, 9000000, 'Ralf Rangnick'),
+('Francia', 'París', D, 67000000, 'Didier Deschamps'),
+('Países Bajos', 'Ámsterdam', D, 17500000, 'Ronald Koeman'),
+('Polonia', 'Varsovia', D, 38000000, 'Michał Probierz'),
+('Rumania', 'Bucarest', E, 19000000, 'Edward Iordănescu'),
+('Bélgica', 'Bruselas', E, 11500000, 'Domenico Tedesco'),
+('Eslovaquia', 'Bratislava', E, 5400000, 'Francesco Calzona'),
+('Ucrania', 'Kiev', E, 41000000, 'Serhiy Rebrov'),
+('Portugal', 'Lisboa', F, 10300000, 'Roberto Martínez'),
+('Turquía', 'Ankara', F, 82000000, 'Vincenzo Montella'),
+('Georgia', 'Tiflis', F, 3700000, 'Willy Sagnol'),
+('Chequia', 'Praga', F, 10700000, 'Jaroslav Šilhavý');
 
 -- Estadios
 INSERT INTO estadios (name, city, capacity, selection_name) VALUES
