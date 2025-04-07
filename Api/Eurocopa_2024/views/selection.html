@@ -61,19 +61,17 @@
       </tr>
     </thead>
     <tbody>
-      <!-- Aquí se insertarán dinámicamente las selecciones desde el backend -->
-      {{#each selecciones}}
+      <% selecciones.forEach(function(seleccion) { %>
         <tr>
-          <td>{{selection_name}}</td>
-          <td>{{capital}}</td>
-          <td>{{group_name}}</td>
-          <td>{{population}}</td>
-          <td>{{coach}}</td>
+          <td><%= seleccion.selection_name %></td>
+          <td><%= seleccion.capital %></td>
+          <td><%= seleccion.group_name %></td>
+          <td><%= seleccion.population %></td>
+          <td><%= seleccion.coach %></td>
         </tr>
-      {{/each}}
+      <% }); %>
     </tbody>
   </table>
   <a href="/home">Volver al inicio</a>
 </body>
 </html>
-
