@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buscar Estadio</title>
+  <title>Buscar Estadio por Selección</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -41,18 +41,42 @@
       margin-top: 20px;
       display: inline-block;
     }
+    .result-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      margin-top: 20px;
+      max-width: 600px;
+    }
+    .result-card h2 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
-  <h1>Buscar Estadio</h1>
+  <h1>Buscar Estadio por Selección</h1>
   <form method="GET" action="/stadiumSearch">
-    <label for="stadium">Nombre del estadio:</label><br>
-    <input type="text" id="stadium" name="name" placeholder="Ej: Allianz Arena" required><br>
+    <label for="selection">Nombre de la selección:</label><br>
+    <input type="text" id="selection" name="q" placeholder="Ej: España" required><br>
+    <input type="hidden" name="field" value="selection_name">
     <button type="submit">Buscar</button>
   </form>
 
   <div id="results">
-    <!-- Resultados dinámicos -->
+    <% if (estadios && estadios.length > 0) { %>
+      <% estadios.forEach(estadio => { %>
+        <div class="result-card">
+          <h2><%= estadio.name %></h2>
+          <p><strong>Ciudad:</strong> <%= estadio.city %></p>
+          <p><strong>Capacidad:</strong> <%= estadio.capacity %></p>
+          <p><strong>Selección:</strong> <%= estadio.selection_name %></p>
+        </div>
+      <% }) %>
+    <% } else if (typeof estadios !== 'undefined') { %>
+      <p>No se encontró ningún estadio para esa selección.</p>
+    <% } %>
   </div>
 
   <a href="/home">Volver al inicio</a>
