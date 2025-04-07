@@ -8,7 +8,7 @@ CREATE TABLE selecciones (
   id INT PRIMARY KEY AUTO_INCREMENT,
   selection_name VARCHAR(50) NOT NULL UNIQUE,
   capital VARCHAR(50) NOT NULL,
-  group_id INT,
+  group_name INT,
   population BIGINT,
   coach VARCHAR(50),
   FOREIGN KEY (group_id) REFERENCES grupos(id)
@@ -41,7 +41,7 @@ INSERT INTO grupos (group_name) VALUES
 ('A'), ('B'), ('C'), ('D'), ('E'), ('F');
 
 -- Selecciones
-INSERT INTO selecciones (selection_name, capital, group_id, population, coach) VALUES
+INSERT INTO selecciones (selection_name, capital, group_name, population, coach) VALUES
 ('Alemania', 'Berlín', 1, 83200000, 'Julian Nagelsmann'),
 ('Suiza', 'Berna', 1, 8700000, 'Murat Yakin'),
 ('Hungría', 'Budapest', 1, 9600000, 'Marco Rossi'),
