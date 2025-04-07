@@ -19,8 +19,8 @@ CREATE TABLE estadios (
   name VARCHAR(100) NOT NULL,
   city VARCHAR(50) NOT NULL,
   capacity INT,
-  selection_id INT,
-  FOREIGN KEY (selection_id) REFERENCES selecciones(id)
+  selection_name INT,
+  FOREIGN KEY (selection_name) REFERENCES selecciones(id)
 );
 
 CREATE TABLE partidos (
@@ -68,7 +68,7 @@ INSERT INTO selecciones (selection_name, capital, group_id, population, coach) V
 ('Chequia', 'Praga', 6, 10700000, 'Jaroslav Šilhavý');
 
 -- Estadios
-INSERT INTO estadios (name, city, capacity, selection_id) VALUES
+INSERT INTO estadios (name, city, capacity, selection_name) VALUES
 ('Allianz Arena', 'Munich', 75000, 1),
 ('Stade de Suisse', 'Berna', 31000, 2),
 ('Puskás Aréna', 'Budapest', 67000, 3),

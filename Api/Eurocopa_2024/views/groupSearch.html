@@ -60,9 +60,24 @@
   </form>
 
   <div id="results">
-    <!-- Aquí aparecerán los partidos y horarios del grupo seleccionado -->
+    <% if (grupos && grupos.length > 0) { %>
+      <h2>Resultados de la búsqueda:</h2>
+      <% grupos.forEach(grupo => { %>
+        <div class="group">
+          <h3>Grupo <%= grupo.group_name %></h3>
+          <ul>
+            <% grupo.selections.forEach(seleccion => { %>
+              <li><%= seleccion %></li>
+            <% }); %>
+          </ul>
+        </div>
+      <% }); %>
+    <% } else { %>
+      <p>No se encontraron grupos con esa selección.</p>
+    <% } %>
   </div>
 
   <a href="/home">Volver al inicio</a>
 </body>
 </html>
+

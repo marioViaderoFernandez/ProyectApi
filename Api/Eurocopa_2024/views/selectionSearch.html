@@ -16,11 +16,15 @@
       color: #2980b9;
       font-size: 2.5em;
       margin-bottom: 20px;
+      text-align: center;
+    }
+    form {
+      text-align: center;
     }
     input, button {
       padding: 12px;
       margin: 8px 0;
-      font-size: 1em;
+      font-size: 1.1em;
       width: 100%;
       max-width: 400px;
       border-radius: 5px;
@@ -38,8 +42,25 @@
     a {
       color: #3498db;
       text-decoration: none;
-      margin-top: 20px;
       display: inline-block;
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #results {
+      margin-top: 30px;
+    }
+    .result-item {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #ecf0f1;
+      margin-bottom: 10px;
+    }
+    .result-item h3 {
+      margin: 0;
+      color: #2980b9;
     }
   </style>
 </head>
@@ -53,8 +74,21 @@
 
   <div id="results">
     <!-- Aquí aparecerán los resultados de la búsqueda -->
+    {{#if selecciones.length}}
+      {{#each selecciones}}
+        <div class="result-item">
+          <h3>{{selection_name}} ({{coach}})</h3>
+          <p>Capital: {{capital}}</p>
+          <p>Grupo: {{group_name}}</p>
+          <p>Población: {{population}}</p>
+        </div>
+      {{/each}}
+    {{else}}
+      <p>No se encontraron selecciones con ese entrenador.</p>
+    {{/if}}
   </div>
 
   <a href="/home">Volver al inicio</a>
 </body>
 </html>
+

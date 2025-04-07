@@ -47,18 +47,24 @@
   <table>
     <thead>
       <tr>
-        <th>Fecha</th>
         <th>Hora</th>
         <th>Equipo 1</th>
         <th>Equipo 2</th>
         <th>Estadio</th>
-        <th>Resultado</th>
       </tr>
     </thead>
     <tbody>
-      <!-- Partidos cargados dinámicamente -->
+      <% partidos.forEach(partido => { %>
+        <tr>
+          <td><%= partido.match_time %></td>
+          <td><%= partido.local_name_selection %></td>
+          <td><%= partido.visitor_name_selection %></td>
+          <td><%= partido.stadium_name %></td>
+        </tr>
+      <% }); %>
     </tbody>
   </table>
   <a href="/home">Volver al inicio</a>
 </body>
 </html>
+

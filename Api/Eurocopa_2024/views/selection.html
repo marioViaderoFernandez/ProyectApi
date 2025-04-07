@@ -16,15 +16,30 @@
       color: #2980b9;
       font-size: 2.5em;
       margin-bottom: 20px;
+      text-align: center;
     }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-      font-size: 1.2em;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    td {
+      background-color: #ecf0f1;
     }
     a {
       color: #3498db;
       text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
       font-size: 1.1em;
     }
     a:hover {
@@ -35,9 +50,30 @@
 <body>
   <h1>Selecciones Participantes</h1>
   <p>Listado de todas las selecciones que compiten en la Eurocopa 2024:</p>
-  <ul id="teams-list">
-    <!-- Aquí se insertarán dinámicamente las selecciones desde el backend -->
-  </ul>
+  <table>
+    <thead>
+      <tr>
+        <th>Selección</th>
+        <th>Capital</th>
+        <th>Grupo</th>
+        <th>Población</th>
+        <th>Entrenador</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí se insertarán dinámicamente las selecciones desde el backend -->
+      {{#each selecciones}}
+        <tr>
+          <td>{{selection_name}}</td>
+          <td>{{capital}}</td>
+          <td>{{group_name}}</td>
+          <td>{{population}}</td>
+          <td>{{coach}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
   <a href="/home">Volver al inicio</a>
 </body>
 </html>
+
