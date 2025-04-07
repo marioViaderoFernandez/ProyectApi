@@ -57,14 +57,14 @@
       <% partidos.forEach(partido => { %>
         <tr>
           <td><%= partido.match_time %></td>
-          <td><%= partido.local_name_selection %></td>
-          <td><%= partido.visitor_name_selection %></td>
-          <td><%= partido.stadium_name %></td>
+          <td><%= partido.equipo_1 %></td>
+          <td><%= partido.equipo_2 %></td>
+          <td><%= partido.estadio %></td>
         </tr>
       <% }); %>
     </tbody>
   </table>
-  <a href="/home">Volver al inicio</a>
+  <a href="/">Volver al inicio</a>
 </body>
 </html>
 

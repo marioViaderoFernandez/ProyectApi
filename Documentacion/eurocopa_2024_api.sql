@@ -25,13 +25,13 @@ CREATE TABLE estadios (
 
 CREATE TABLE partidos (
   id INT PRIMARY KEY AUTO_INCREMENT,
-  local_id INT,
-  visitor_id INT,
-  stadium_id INT,
+  equipo_1 INT,
+  equipo_2 INT,
+  estadio INT,
   match_time TIME,
-  FOREIGN KEY (local_id) REFERENCES selecciones(id),
-  FOREIGN KEY (visitor_id) REFERENCES selecciones(id),
-  FOREIGN KEY (stadium_id) REFERENCES estadios(id)
+  FOREIGN KEY (equipo_1_id) REFERENCES selecciones(id),
+  FOREIGN KEY (equipo_2_id) REFERENCES selecciones(id),
+  FOREIGN KEY (estadio_id) REFERENCES estadios(id)
 );
 
 -- Inserción de datos
@@ -95,8 +95,8 @@ INSERT INTO estadios (name, city, capacity, selection_name) VALUES
 ('Sinobo Stadium', 'Praga', 19370, 24);
 
 -- Partidos
--- NOTA: Aquí asumiré que los IDs de las selecciones y estadios coinciden con el orden de inserción
-INSERT INTO partidos (local_id, visitor_id, stadium_id, match_time) VALUES
+-- NOTA: Aquí asumiremos que los IDs de las selecciones y estadios coinciden con el orden de inserción
+INSERT INTO partidos (equipo_1, equipo_2, estadio, match_time) VALUES
 (1, 2, 1, '15:00'), (3, 4, 3, '18:00'), (5, 6, 5, '21:00'),
 (7, 8, 7, '15:00'), (9, 10, 9, '18:00'), (11, 12, 11, '21:00'),
 (13, 14, 13, '15:00'), (15, 16, 15, '18:00'), (17, 18, 17, '21:00'),
