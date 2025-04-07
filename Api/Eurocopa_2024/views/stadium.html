@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estadios</title>
+  <title>Estadios - Eurocopa 2024</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -43,20 +43,30 @@
   </style>
 </head>
 <body>
-  <h1>Estadios</h1>
+  <h1>Estadios de la Eurocopa 2024</h1>
   <p>Consulta los estadios donde se jugarán los partidos.</p>
+
   <table>
     <thead>
       <tr>
         <th>Nombre</th>
         <th>Ciudad</th>
         <th>Capacidad</th>
+        <th>Selección</th>
       </tr>
     </thead>
     <tbody>
-      <!-- Datos dinámicos desde el backend -->
+      <% estadios.forEach(estadio => { %>
+        <tr>
+          <td><%= estadio.name %></td>
+          <td><%= estadio.city %></td>
+          <td><%= estadio.capacity %></td>
+          <td><%= estadio.selection_name %></td>
+        </tr>
+      <% }); %>
     </tbody>
   </table>
-  <a href="/home">Volver al inicio</a>
+
+  <a href="/">Volver al inicio</a>
 </body>
 </html>

@@ -3,11 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 // Modelos Eurocopa
-const Selection = require('./models/Selection');
-const Stadium = require('./models/Stadium');
-const Match = require('./models/Match');
-const Group = require('./models/Group');
-const Result = require('./models/Result');
+const Selection = require('./models/Seleccion');
+const Stadium = require('./models/Estadio');
+const Match = require('./models/Partido');
+const Group = require('./models/Grupo');
 
 // Ruta de los archivos JSON con los datos
 const dataFolderPath = path.resolve(__dirname, 'data');
@@ -30,20 +29,19 @@ mongoose.connect('mongodb://localhost:27017/eurocopa_2024_api')
 // Función para importar datos
 const importData = async () => {
   try {
-    const selectionsData = fs.readFileSync(path.join(dataFolderPath, 'selections.json'), 'utf-8');
-    await Selection.create(JSON.parse(selectionsData));
+    const selectionsData = fs.readFileSync(path.join(dataFolderPath, 'selecciones.json'), 'utf-8');
+    await Seleccion.create(JSON.parse(seleccionesData));
 
-    const stadiumsData = fs.readFileSync(path.join(dataFolderPath, 'stadiums.json'), 'utf-8');
-    await Stadium.create(JSON.parse(stadiumsData));
+    const stadiumsData = fs.readFileSync(path.join(dataFolderPath, 'estadios.json'), 'utf-8');
+    await Estadio.create(JSON.parse(estadiosData));
 
-    const matchesData = fs.readFileSync(path.join(dataFolderPath, 'matches.json'), 'utf-8');
-    await Match.create(JSON.parse(matchesData));
+    const matchesData = fs.readFileSync(path.join(dataFolderPath, 'partidos.json'), 'utf-8');
+    await Partido.create(JSON.parse(partidosData));
 
-    const groupsData = fs.readFileSync(path.join(dataFolderPath, 'groups.json'), 'utf-8');
-    await Group.create(JSON.parse(groupsData));
+    const groupsData = fs.readFileSync(path.join(dataFolderPath, 'grupos.json'), 'utf-8');
+    await Grupo.create(JSON.parse(gruposData));
 
-    const resultsData = fs.readFileSync(path.join(dataFolderPath, 'results.json'), 'utf-8');
-    await Result.create(JSON.parse(resultsData));
+    
 
     console.log('Datos importados correctamente');
     process.exit();

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buscar Estadio por Selección</title>
+  <title>Buscar Estadio - Eurocopa 2024</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -17,7 +17,7 @@
       font-size: 2.5em;
       margin-bottom: 20px;
     }
-    input, button {
+    input, button, select {
       padding: 12px;
       margin: 8px 0;
       font-size: 1em;
@@ -41,44 +41,50 @@
       margin-top: 20px;
       display: inline-block;
     }
-    .result-card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 15px;
-      margin-top: 20px;
-      max-width: 600px;
-    }
-    .result-card h2 {
-      color: #2c3e50;
-      margin-top: 0;
-    }
   </style>
 </head>
 <body>
-  <h1>Buscar Estadio por Selección</h1>
+  <h1>Buscar Estadio</h1>
   <form method="GET" action="/stadiumSearch">
-    <label for="selection">Nombre de la selección:</label><br>
-    <input type="text" id="selection" name="q" placeholder="Ej: España" required><br>
-    <input type="hidden" name="field" value="selection_name">
+    <label for="q">Nombre del estadio o selección:</label><br>
+    <input type="text" id="q" name="q" placeholder="Ej: Allianz Arena" required><br>
+
+    <label for="field">Buscar por:</label><br>
+    <select name="field" id="field" required>
+      <option value="name">Nombre del Estadio</option>
+      <option value="selection_name">Selección</option>
+    </select><br>
+
     <button type="submit">Buscar</button>
   </form>
 
-  <div id="results">
-    <% if (estadios && estadios.length > 0) { %>
-      <% estadios.forEach(estadio => { %>
-        <div class="result-card">
-          <h2><%= estadio.name %></h2>
-          <p><strong>Ciudad:</strong> <%= estadio.city %></p>
-          <p><strong>Capacidad:</strong> <%= estadio.capacity %></p>
-          <p><strong>Selección:</strong> <%= estadio.selection_name %></p>
-        </div>
-      <% }) %>
-    <% } else if (typeof estadios !== 'undefined') { %>
-      <p>No se encontró ningún estadio para esa selección.</p>
-    <% } %>
-  </div>
+  <% if (estadios && estadios.length > 0) { %>
+    <h2>Resultados:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Ciudad</th>
+          <th>Capacidad</th>
+          <th>Selección</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% estadios.forEach(estadio => { %>
+          <tr>
+            <td><%= estadio.name %></td>
+            <td><%= estadio.city %></td>
+            <td><%= estadio.capacity %></td>
+            <td><%= estadio.selection_name %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  <% } else if (estadios && estadios.length === 0) { %>
+    <p>No se encontraron resultados.</p>
+  <% } %>
 
-  <a href="/home">Volver al inicio</a>
+  <a href="/">Volver al inicio</a>
 </body>
 </html>
+

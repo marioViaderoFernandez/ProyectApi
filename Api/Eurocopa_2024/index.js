@@ -8,6 +8,10 @@ const app = express();
 // Carpeta de vistas (HTML)
 app.use(express.static(path.join(__dirname, 'views')));
 
+// Configuración para habilitar HTML
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+
 // Conexión con MongoDB
 mongoose.connect('mongodb://localhost:27017/eurocopa_2024_api')
   .then(() => {
